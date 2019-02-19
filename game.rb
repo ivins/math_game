@@ -28,10 +28,12 @@ class Game
     if player1.score == 0
       puts "Player 2 wins with a score of #{player2.score}/3"
       puts "--- Game Over-----"
+      puts "Good bye!"
       @game_over = true
     elsif player2.score == 0
       puts "Player 1 wins with a score of #{player1.score}/3"
       puts "--- Game Over-----"
+      puts "Good bye!"
       @game_over = true
     end 
   end
@@ -54,9 +56,10 @@ class Game
     puts "P1: #{player1.score}/3 vs P2: #{player2.score}/3"
     player1.score
 
-    puts "---- NEW TURN -----"
+    
     switch_player
     game_over
+    @game_over == false ? (puts "---- NEW TURN -----") : nil
     end
   end
 end
