@@ -6,7 +6,9 @@ class Questions
       35 => 'What is 28 plus 7?',
       22 => 'What is 11 plus 11?',
       33 => 'What is 44 minus 11?',
-      17 => 'What is 10 plus 7?' 
+      17 => 'What is 10 plus 7?',
+      2 => 'What is 8 divided by 4?',
+      13 => 'What is 14 minus 1?' 
     }
   end
 
@@ -17,5 +19,5 @@ class Questions
 
 end
 
-q = Questions.new
-q.select_question
+# q = Questions.new
+# q.select_question
